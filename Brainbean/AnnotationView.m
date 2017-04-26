@@ -38,7 +38,7 @@
     
     self.textView.text = text;
     
-    [self layoutSubviews];
+    [self.textView layoutSubviews];
 }
 
 

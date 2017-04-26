@@ -38,6 +38,8 @@
     
     NSURL *url = [NSURL URLWithString:URL(locationString)];
     
+    __weak MGGeocoding *weakSelf = self;
+    
     NSURLSessionDataTask *dataTask = [self.defaultSession dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
         NSError *errorJson = nil;
@@ -51,8 +53,13 @@
         
         
         NSDictionary *locationsDict = [(NSArray *)json[@"results"] lastObject];
-        if ([self.delegate respondsToSelector:@selector(geocodingResult:location:)])
-            [self.delegate geocodingResult:[locationsDict[@"locations"] lastObject] location:location];
+        MGGeocoding* strongSelf = weakSelf;
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            if ([strongSelf.delegate respondsToSelector:@selector(geocodingResult:location:)])
+                [strongSelf.delegate geocodingResult:[locationsDict[@"locations"] lastObject] location:location];
+        });
+        
+        
         
         NSLog(@"MGGeocoding json = %@", locationsDict[@"locations"]);
         
