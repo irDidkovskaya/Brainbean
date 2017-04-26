@@ -1,0 +1,12 @@
+PODS:
+  - MapQuestMaps (3.4.1-1.3)
+
+DEPENDENCIES:
+  - MapQuestMaps (= 3.4.1-1.3)
+
+SPEC CHECKSUMS:
+  MapQuestMaps: 684fb050900d8d30bd646b02cfc3dab317abda65
+
+PODFILE CHECKSUM: 76f5ffaf9f736c68c654709c9d68de2a9cd57ef8
+
+COCOAPODS: 1.2.1

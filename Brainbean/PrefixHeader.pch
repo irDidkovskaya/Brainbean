@@ -1,0 +1,35 @@
+//
+//  PrefixHeader.pch
+//  
+//
+//  Created by Iryna Didkovska on 4/24/17.
+//
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <CoreLocation/CoreLocation.h>
+#import <Mapbox/Mapbox.h>
+#import <MapKit/MapKit.h>
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#define SelectedMap @"SelectedMap"
+#define SelectedGeocoding @"SelectedGeocoding"
+#define PIN_ICON_OFFSET 11
+
+typedef NS_ENUM(NSInteger, kGeocodingType) {
+    kGeocodingApple,
+    kGeocodingMapQuest
+};
+
+
+typedef NS_ENUM(NSInteger, kMapType) {
+    kMapTypeApple,
+    kMapTypeMapQuest
+};
+
+
+#endif /* PrefixHeader_pch */
