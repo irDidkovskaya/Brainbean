@@ -8,10 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
-#import "BaseGeocoder.h"
+#import "Geocoder.h"
 
 
-@interface MGGeocoding : BaseGeocoder
+@interface MGGeocoding : NSObject <Geocoder>
 
+@property (nonatomic, weak) id<GeocodingDelegate> delegate;
+- (void)getAdressByLocation:(CLLocation *)location;
+- (void)getAdressByLocation:(CLLocation *)location withCompletionHandler:(void(^)(NSDictionary * dict))completionHandler;
 
 @end

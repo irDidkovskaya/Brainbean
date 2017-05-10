@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4480EDAC8E97B3A7436B99A3 /* libPods-Brainbean.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4C92AC8108F332504283D6 /* libPods-Brainbean.a */; };
-		8A2734841EC2D8E80082BEF8 /* BaseGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2734821EC2D8E80082BEF8 /* BaseGeocoder.m */; };
 		E651ACA81EAE6A630053C383 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E651ACA71EAE6A630053C383 /* main.m */; };
 		E651ACAB1EAE6A630053C383 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E651ACAA1EAE6A630053C383 /* AppDelegate.m */; };
 		E651ACB11EAE6A630053C383 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E651ACAF1EAE6A630053C383 /* Main.storyboard */; };
@@ -31,8 +30,6 @@
 /* Begin PBXFileReference section */
 		5B4C92AC8108F332504283D6 /* libPods-Brainbean.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Brainbean.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A2734811EC2D7FF0082BEF8 /* Geocoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Geocoder.h; sourceTree = "<group>"; };
-		8A2734821EC2D8E80082BEF8 /* BaseGeocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGeocoder.m; sourceTree = "<group>"; };
-		8A2734831EC2D8E80082BEF8 /* BaseGeocoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGeocoder.h; sourceTree = "<group>"; };
 		9CEBB701AE763CF483284BCC /* Pods-Brainbean.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brainbean.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brainbean/Pods-Brainbean.release.xcconfig"; sourceTree = "<group>"; };
 		A4EAD3EC5E8B4604876D249E /* Pods-Brainbean.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brainbean.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brainbean/Pods-Brainbean.debug.xcconfig"; sourceTree = "<group>"; };
 		E651ACA31EAE6A630053C383 /* Brainbean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brainbean.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,8 +188,6 @@
 		E651ACDB1EAE90240053C383 /* Geocoding */ = {
 			isa = PBXGroup;
 			children = (
-				8A2734821EC2D8E80082BEF8 /* BaseGeocoder.m */,
-				8A2734831EC2D8E80082BEF8 /* BaseGeocoder.h */,
 				E651ACD71EAE7EAB0053C383 /* MGGeocoding */,
 				E651ACFA1EAFD5E00053C383 /* AppleGeocoder */,
 				8A2734811EC2D7FF0082BEF8 /* Geocoder.h */,
@@ -381,7 +376,6 @@
 				E651ACD31EAE6ACE0053C383 /* SettingsViewController.m in Sources */,
 				E651ACCC1EAE6ACE0053C383 /* Annotation.m in Sources */,
 				E651ACDE1EAE91030053C383 /* AppleCLGeocoder.m in Sources */,
-				8A2734841EC2D8E80082BEF8 /* BaseGeocoder.m in Sources */,
 				E651ACA81EAE6A630053C383 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
