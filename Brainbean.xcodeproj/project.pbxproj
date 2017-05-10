@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4480EDAC8E97B3A7436B99A3 /* libPods-Brainbean.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4C92AC8108F332504283D6 /* libPods-Brainbean.a */; };
+		8A2734841EC2D8E80082BEF8 /* BaseGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2734821EC2D8E80082BEF8 /* BaseGeocoder.m */; };
 		E651ACA81EAE6A630053C383 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E651ACA71EAE6A630053C383 /* main.m */; };
 		E651ACAB1EAE6A630053C383 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E651ACAA1EAE6A630053C383 /* AppDelegate.m */; };
 		E651ACB11EAE6A630053C383 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E651ACAF1EAE6A630053C383 /* Main.storyboard */; };
@@ -21,7 +22,6 @@
 		E651ACD31EAE6ACE0053C383 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E651ACCB1EAE6ACE0053C383 /* SettingsViewController.m */; };
 		E651ACDA1EAE7EDE0053C383 /* MGGeocoding.m in Sources */ = {isa = PBXBuildFile; fileRef = E651ACD91EAE7EDE0053C383 /* MGGeocoding.m */; };
 		E651ACDE1EAE91030053C383 /* AppleCLGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E651ACDD1EAE91030053C383 /* AppleCLGeocoder.m */; };
-		E651ACE11EAE913B0053C383 /* BaseGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E651ACE01EAE913B0053C383 /* BaseGeocoder.m */; };
 		E651ACEB1EAEA78E0053C383 /* AppleMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E651ACEA1EAEA78E0053C383 /* AppleMapViewController.m */; };
 		E651ACEE1EAEAA140053C383 /* MapBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E651ACED1EAEAA140053C383 /* MapBaseViewController.m */; };
 		E651ACF41EAFC62A0053C383 /* MKCustomAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E651ACF31EAFC62A0053C383 /* MKCustomAnnotationView.m */; };
@@ -30,6 +30,9 @@
 
 /* Begin PBXFileReference section */
 		5B4C92AC8108F332504283D6 /* libPods-Brainbean.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Brainbean.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A2734811EC2D7FF0082BEF8 /* Geocoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Geocoder.h; sourceTree = "<group>"; };
+		8A2734821EC2D8E80082BEF8 /* BaseGeocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGeocoder.m; sourceTree = "<group>"; };
+		8A2734831EC2D8E80082BEF8 /* BaseGeocoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGeocoder.h; sourceTree = "<group>"; };
 		9CEBB701AE763CF483284BCC /* Pods-Brainbean.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brainbean.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brainbean/Pods-Brainbean.release.xcconfig"; sourceTree = "<group>"; };
 		A4EAD3EC5E8B4604876D249E /* Pods-Brainbean.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brainbean.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brainbean/Pods-Brainbean.debug.xcconfig"; sourceTree = "<group>"; };
 		E651ACA31EAE6A630053C383 /* Brainbean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brainbean.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,8 +58,6 @@
 		E651ACD91EAE7EDE0053C383 /* MGGeocoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGGeocoding.m; sourceTree = "<group>"; };
 		E651ACDC1EAE91030053C383 /* AppleCLGeocoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleCLGeocoder.h; sourceTree = "<group>"; };
 		E651ACDD1EAE91030053C383 /* AppleCLGeocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleCLGeocoder.m; sourceTree = "<group>"; };
-		E651ACDF1EAE913B0053C383 /* BaseGeocoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGeocoder.h; sourceTree = "<group>"; };
-		E651ACE01EAE913B0053C383 /* BaseGeocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGeocoder.m; sourceTree = "<group>"; };
 		E651ACE91EAEA78E0053C383 /* AppleMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleMapViewController.h; sourceTree = "<group>"; };
 		E651ACEA1EAEA78E0053C383 /* AppleMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleMapViewController.m; sourceTree = "<group>"; };
 		E651ACEC1EAEAA140053C383 /* MapBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapBaseViewController.h; sourceTree = "<group>"; };
@@ -119,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				E651ACDB1EAE90240053C383 /* Geocoding */,
-				E651ACD71EAE7EAB0053C383 /* MGGeocoding */,
 				E651ACD61EAE6B150053C383 /* Annotation */,
 				E651ACD51EAE6B060053C383 /* Maps */,
 				E651ACD41EAE6AE60053C383 /* Settings */,
@@ -191,9 +191,11 @@
 		E651ACDB1EAE90240053C383 /* Geocoding */ = {
 			isa = PBXGroup;
 			children = (
+				8A2734821EC2D8E80082BEF8 /* BaseGeocoder.m */,
+				8A2734831EC2D8E80082BEF8 /* BaseGeocoder.h */,
+				E651ACD71EAE7EAB0053C383 /* MGGeocoding */,
 				E651ACFA1EAFD5E00053C383 /* AppleGeocoder */,
-				E651ACDF1EAE913B0053C383 /* BaseGeocoder.h */,
-				E651ACE01EAE913B0053C383 /* BaseGeocoder.m */,
+				8A2734811EC2D7FF0082BEF8 /* Geocoder.h */,
 			);
 			name = Geocoding;
 			sourceTree = "<group>";
@@ -327,7 +329,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		548910E4E3AAC70DE80FA89F /* [CP] Copy Pods Resources */ = {
@@ -379,7 +381,7 @@
 				E651ACD31EAE6ACE0053C383 /* SettingsViewController.m in Sources */,
 				E651ACCC1EAE6ACE0053C383 /* Annotation.m in Sources */,
 				E651ACDE1EAE91030053C383 /* AppleCLGeocoder.m in Sources */,
-				E651ACE11EAE913B0053C383 /* BaseGeocoder.m in Sources */,
+				8A2734841EC2D8E80082BEF8 /* BaseGeocoder.m in Sources */,
 				E651ACA81EAE6A630053C383 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
