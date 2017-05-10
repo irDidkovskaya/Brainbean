@@ -7,7 +7,7 @@
 //
 
 #import "MQMapViewController.h"
-#import "BaseGeocoder.h"
+#import "Geocoder.h"
 #import "AppleCLGeocoder.h"
 #import "MGGeocoding.h"
 #import "Annotation.h"

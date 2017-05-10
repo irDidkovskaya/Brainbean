@@ -1,19 +1,24 @@
 //
-//  BaseGeocoder.h
+//  Geocoder.h
 //  Brainbean
 //
-//  Created by Iryna Didkovska on 4/24/17.
+//  Created by Alexey Pelykh on 5/10/17.
 //  Copyright © 2017 iryna. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <CoreLocation/CoreLocation.h>
+#ifndef Geocoder_h
+#define Geocoder_h
 
-#import "Geocoder.h"
+@protocol GeocodingDelegate <NSObject>
+@required
+- (void)geocodingResult:(NSDictionary *)dict location:(CLLocation *)location;
+@end
 
-@interface BaseGeocoder : NSObject <Geocoder>
+@protocol Geocoder
+@required
 @property (nonatomic, weak) id<GeocodingDelegate> delegate;
 - (void)getAdressByLocation:(CLLocation *)location;
 - (void)getAdressByLocation:(CLLocation *)location withCompletionHandler:(void(^)(NSDictionary * dict))completionHandler;
-
 @end
+
+#endif /* Geocoder_h */
