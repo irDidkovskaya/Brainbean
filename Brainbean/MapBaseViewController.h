@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseGeocoder.h"
+#import "Geocoder.h"
 
 @interface MapBaseViewController : UIViewController
-@property (nonatomic, strong) BaseGeocoder *geocoder;
+@property (nonatomic, strong) id<Geocoder> geocoder;
 
 - (void)useGeocodingType:(kGeocodingType)geocodingType;
 @end
